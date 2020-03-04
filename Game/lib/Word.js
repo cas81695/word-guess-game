@@ -7,10 +7,13 @@ class Word {
     }
 
     getSolution() {
-        
+        return this.letters.map(
+            letter => Letter.getSolution())
+            .join("");
     }
 
     toString() {
+        this.letters.join(" ");
 
     }
 
@@ -19,7 +22,7 @@ class Word {
     }
 
     guessedCorrectly() {
-        
+
     }
 
 
